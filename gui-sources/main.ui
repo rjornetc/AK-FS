@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>d9dbb730946e4b7f0bc810a5acb452d6a83b3ac4.svgz</normaloff>d9dbb730946e4b7f0bc810a5acb452d6a83b3ac4.svgz</iconset>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::ForceTabbedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QStackedWidget" name="main_stacked">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="5" column="0" colspan="3">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="2">
+         <widget class="QDateTimeEdit" name="systemimputdate">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="currentSection">
+           <enum>QDateTimeEdit::DaySection</enum>
+          </property>
+          <property name="displayFormat">
+           <string>d MMM yyyy HH:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Author</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Colection</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1" colspan="2">
+         <widget class="QDateTimeEdit" name="sharedate">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="currentSection">
+           <enum>QDateTimeEdit::DaySection</enum>
+          </property>
+          <property name="currentSectionIndex">
+           <number>0</number>
+          </property>
+          <property name="timeSpec">
+           <enum>Qt::LocalTime</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1" colspan="2">
+         <widget class="QDateTimeEdit" name="importdate">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="displayFormat">
+           <string>d MMM yyyy HH:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="author"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>System imput date</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Import date</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QComboBox" name="colection"/>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QComboBox" name="file"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>File</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="2">
+         <widget class="QProgressBar" name="keylength">
+          <property name="minimum">
+           <number>16</number>
+          </property>
+          <property name="maximum">
+           <number>32</number>
+          </property>
+          <property name="value">
+           <number>16</number>
+          </property>
+          <property name="format">
+           <string>%v bytes</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Key's length</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Share date</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="author_identicon">
+          <property name="minimumSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Alias</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="alias">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>User id</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <widget class="QLabel" name="friend_name">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>14</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Friend</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QToolButton" name="alias_button">
+          <property name="minimumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme="document-save">
+            <normaloff/>
+           </iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3" rowspan="2">
+         <widget class="QLabel" name="identicon">
+          <property name="minimumSize">
+           <size>
+            <width>64</width>
+            <height>64</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>64</width>
+            <height>128</height>
+           </size>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QLineEdit" name="user_id"/>
+        </item>
+        <item row="4" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0" colspan="4">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Public RSA Key</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Key length</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="rsakey_length"/>
+           </item>
+           <item row="0" column="2">
+            <widget class="QToolButton" name="rsakey_show">
+             <property name="minimumSize">
+              <size>
+               <width>22</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>22</width>
+               <height>22</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Show public RSA key</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset theme="view-certificate">
+               <normaloff/>
+              </iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="colectionsDock">
+   <property name="minimumSize">
+    <size>
+     <width>90</width>
+     <height>112</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <property name="windowTitle">
+    <string>Colections</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="1">
+      <widget class="QTreeWidget" name="colectionTree">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::CustomContextMenu</enum>
+       </property>
+       <property name="acceptDrops">
+        <bool>true</bool>
+       </property>
+       <attribute name="headerVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="headerShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Files</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="friendsDock">
+   <property name="windowTitle">
+    <string>Friends</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="friendsDockContent">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QListWidget" name="friendsList">
+       <property name="contextMenuPolicy">
+        <enum>Qt::CustomContextMenu</enum>
+       </property>
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>668</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuShare">
+     <property name="title">
+      <string>Share</string>
+     </property>
+     <property name="icon">
+      <iconset theme="document-share">
+       <normaloff/>
+      </iconset>
+     </property>
+     <addaction name="actionWith_friend"/>
+     <addaction name="actionWith_anyone"/>
+    </widget>
+    <addaction name="action_file_read"/>
+    <addaction name="menuShare"/>
+    <addaction name="separator"/>
+    <addaction name="action_file_import"/>
+    <addaction name="action_file_export"/>
+   </widget>
+   <widget class="QMenu" name="menuFriends">
+    <property name="title">
+     <string>Friends</string>
+    </property>
+    <addaction name="action_friends_add"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuPanels">
+     <property name="title">
+      <string>Panels</string>
+     </property>
+     <property name="icon">
+      <iconset theme="view-close">
+       <normaloff/>
+      </iconset>
+     </property>
+     <addaction name="action_view_panels_colections"/>
+     <addaction name="action_view_panels_friends"/>
+    </widget>
+    <addaction name="menuPanels"/>
+    <addaction name="actionLock_panels"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionSafe_eraser"/>
+    <addaction name="actionRender"/>
+   </widget>
+   <widget class="QMenu" name="friend_menu">
+    <property name="title">
+     <string>friend_menu</string>
+    </property>
+    <widget class="QMenu" name="menuShare_2">
+     <property name="title">
+      <string>Share</string>
+     </property>
+     <addaction name="action_contextualfriend_share_external"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="action_contextualfriend_show"/>
+    <addaction name="action_contextualfriend_setalias"/>
+    <addaction name="separator"/>
+    <addaction name="menuShare_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_contextualfriend_add"/>
+    <addaction name="action_contextualfriend_remove"/>
+   </widget>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>file_menu</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="colection_menu">
+    <property name="title">
+     <string>colection_menu</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuColection">
+    <property name="title">
+     <string>Colection</string>
+    </property>
+    <addaction name="action_colection_newcolection"/>
+    <addaction name="action_collection_removecollection"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuColection"/>
+   <addaction name="menuFriends"/>
+   <addaction name="menuView"/>
+   <addaction name="menuTools"/>
+   <addaction name="friend_menu"/>
+   <addaction name="file_menu"/>
+   <addaction name="colection_menu"/>
+  </widget>
+  <action name="action_file_read">
+   <property name="icon">
+    <iconset theme="document-open">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>Read</string>
+   </property>
+  </action>
+  <action name="action_file_import">
+   <property name="icon">
+    <iconset theme="document-import">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>Import...</string>
+   </property>
+  </action>
+  <action name="action_file_export">
+   <property name="icon">
+    <iconset theme="document-export">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>Export...</string>
+   </property>
+  </action>
+  <action name="action_colection_newcolection">
+   <property name="icon">
+    <iconset theme="list-add">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>New colection...</string>
+   </property>
+   <property name="toolTip">
+    <string>New colection</string>
+   </property>
+  </action>
+  <action name="action_friends_add">
+   <property name="icon">
+    <iconset theme="list-add-user">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="action_view_panels_colections">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="folder">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>Colections</string>
+   </property>
+  </action>
+  <action name="action_view_panels_friends">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="user-identity">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>Friends</string>
+   </property>
+  </action>
+  <action name="actionWith_friend">
+   <property name="icon">
+    <iconset theme="user">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>With friend</string>
+   </property>
+  </action>
+  <action name="actionWith_anyone">
+   <property name="icon">
+    <iconset theme="web-browser">
+     <normaloff>../../.designer/backup</normaloff>../../.designer/backup</iconset>
+   </property>
+   <property name="text">
+    <string>With anyone</string>
+   </property>
+  </action>
+  <action name="actionLock_panels">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="emblem-locked">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Lock panels</string>
+   </property>
+  </action>
+  <action name="actionSafe_eraser">
+   <property name="icon">
+    <iconset theme="archive-remove">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Safe eraser</string>
+   </property>
+  </action>
+  <action name="actionRender">
+   <property name="icon">
+    <iconset theme="view-presentation">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Render</string>
+   </property>
+   <property name="toolTip">
+    <string>Render</string>
+   </property>
+  </action>
+  <action name="action_contextualfriend_add">
+   <property name="icon">
+    <iconset theme="list-add-user">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="action_contextualfriend_remove">
+   <property name="icon">
+    <iconset theme="list-remove-user">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="action_contextualfriend_share_external">
+   <property name="icon">
+    <iconset theme="document-import">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>External File</string>
+   </property>
+  </action>
+  <action name="action_collection_removecollection">
+   <property name="icon">
+    <iconset theme="list-remove">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Remove collection..</string>
+   </property>
+  </action>
+  <action name="action_contextualfriend_show">
+   <property name="icon">
+    <iconset theme="view-form">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Show</string>
+   </property>
+  </action>
+  <action name="action_contextualfriend_setalias">
+   <property name="icon">
+    <iconset theme="user-properties">
+     <normaloff/>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Set alias...</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>colection</tabstop>
+  <tabstop>file</tabstop>
+  <tabstop>author</tabstop>
+  <tabstop>author_identicon</tabstop>
+  <tabstop>systemimputdate</tabstop>
+  <tabstop>sharedate</tabstop>
+  <tabstop>importdate</tabstop>
+  <tabstop>user_id</tabstop>
+  <tabstop>alias</tabstop>
+  <tabstop>alias_button</tabstop>
+  <tabstop>rsakey_length</tabstop>
+  <tabstop>rsakey_show</tabstop>
+  <tabstop>colectionTree</tabstop>
+  <tabstop>friendsList</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_view_panels_colections</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>colectionsDock</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>75</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>colectionsDock</sender>
+   <signal>visibilityChanged(bool)</signal>
+   <receiver>action_view_panels_colections</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>75</x>
+     <y>155</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLock_panels</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setDockNestingEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

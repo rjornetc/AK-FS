@@ -1,0 +1,25 @@
+# Import the libraries.
+import pydenticon
+import hashlib
+# Set-up a list of foreground colours (taken from Sigil).
+foreground = [ 'rgb(45,79,255)',
+               'rgb(254,180,44)',
+               'rgb(226,121,234)',
+               'rgb(30,179,253)',
+               'rgb(232,77,65)',
+               'rgb(49,203,115)',
+               'rgb(141,69,170)'
+              ]
+# Set-up a background colour (taken from Sigil).
+background = 'rgb(224,224,224)'
+# Instantiate a generator that will create 5x5 block identicons using SHA1
+# digest.
+generator = pydenticon.Generator(8, 8, digest=hashlib.sha1,
+                                 foreground=foreground, background=background)
+                                 
+identicon = generator.generate("af34f4f", 64, 64, output_format="png")
+
+
+f=open("sample.png", "w")
+f.write(identicon)
+f.close()
