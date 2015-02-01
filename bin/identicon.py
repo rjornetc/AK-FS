@@ -185,7 +185,7 @@ def make_image(filename, pixel_map, fg, bg = [255, 255, 255], transparent=False)
 	pl.savefig(filename, bbox_inches='tight', transparent=transparent, pad_inches=0.5)
 
 
-def generate_identicon(string, size, filename, bg=[255, 255, 255], face='left', transparent=False):
+def generate_identicon(string, size, filename, bg=[255, 255, 255], face='left', transparent=True):
 	'''
 	generate_identicon(str, int, str, list, srt, bool) -> NoneType
 
