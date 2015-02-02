@@ -138,7 +138,7 @@ def create_image(filename, pixel_map, fg, bg = [255, 255, 255], transparent=Fals
 
 	Creates image with PIL module
 	'''
-	sc = 50
+	sc = 7
 	size = len(pixel_map)
 	image_size = sc*size
 
