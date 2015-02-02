@@ -1,10 +1,10 @@
 # AK-FS
 
-Asymmetric Key File Sharer is an application that intends to simplify and become humanly friendly using asymmetric encryption file sharing
+Asymmetric Key File Sharer is an application that intends to simplify and become humanly friendly using asymmetric encryption file sharing.
 
 ## **DO NOT USE**
 
-This application **is not safe**, it is in development, it is not usable
+This application **is not safe**, it is in development, it is not usable.
 
 ## Bugs
 
@@ -22,10 +22,19 @@ AttributeError: 'NoneType' object has no attribute 'statusTip'
 ```
 
 ### GUI
-* Incorrect identicon scalation 
+
 
 ## ToDo
 
+### Security
+* Improve the identicons system. Is now easy to impersonate a identicon.
+* Encrypt the private key with a start password.
+
 ### GUI
-* Contextual menus in the GUI
-* Clear identicon.py module
+* Contextual menus in the GUI.
+* Clean identicon.py module.
+
+# Other people work
+
+## [identicon.py](https://github.com/TarasKuzyo/identicon-generator "TarasKuzyo's identicon-generator")
+This file has been adapted by me for this app.
