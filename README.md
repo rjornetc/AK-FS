@@ -33,8 +33,3 @@ AttributeError: 'NoneType' object has no attribute 'statusTip'
 ### GUI
 * Contextual menus in the GUI.
 * Clean identicon.py module.
-
-# Other people work
-
-## [identicon.py](https://github.com/TarasKuzyo/identicon-generator "TarasKuzyo's identicon-generator")
-This file has been adapted by me for this app.
