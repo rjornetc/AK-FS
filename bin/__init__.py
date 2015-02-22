@@ -27,7 +27,7 @@ import time
 
 import ast
 
-from identicon import generate_identicon
+import pydenticon
 
 #try:
     #_fromUtf8 = QtCore.QString.fromUtf8
@@ -40,7 +40,9 @@ LOG_FILE_PATH = 'tai.log'
 LOG_CONSOLE_FORMAT = '%(asctime)s [%(levelname)s] %(message)s'
 LOG_FILE_FORMAT = '%(asctime)s [%(levelname)s] %(message)s'
 
-COLECTION_PATH = '../data/colections'
+DATA_PATH = os.path.join('..', 'data')
+
+COLECTION_PATH = os.path.join(DATA_PATH, 'colections') #'../data/colections'
 IDENTICON_PATH = '../data/img/identicons'
 RSAKEY_PATH = '../data/rsa'
 RSAKEY_PUB_PATH = '../data/rsa.pub'
@@ -122,7 +124,13 @@ def get_rsakey_id(key):
 
 
 def create_identicon(user_id):
-    generate_identicon(user_id,7,os.path.join(IDENTICON_PATH, user_id)+'.png')
+    identicon = pydenticon.Identicon(user_id,
+                         matrix_size=4,
+                         number_of_colors=4)
+        
+    identicon.get_svg(os.path.join(IDENTICON_PATH, user_id)+'.svg').save()
+    
+    #generate_identicon(user_id,7,os.path.join(IDENTICON_PATH, user_id)+'.png')
     
     #try:
         ##urllib.urlretrieve('http://identicon.org/?t=' + user_id + '&s=24',
