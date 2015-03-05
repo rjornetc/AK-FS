@@ -523,9 +523,10 @@ class MainWindow(QtGui.QMainWindow):
                 
             
     def show_friend_from_item(self, current_item, previous_item):
-        self.user_id = str(current_item.statusTip())
-        self.user_alias = FRIENDS[self.user_id][0]
-        self.show_friend()
+        if current_item:
+            self.user_id = str(current_item.statusTip())
+            self.user_alias = FRIENDS[self.user_id][0]
+            self.show_friend()
         
     def show_friend_from_none(self):
         self.user_id = str(self.ui.friendsList.currentItem().statusTip())
